@@ -1,10 +1,40 @@
 import numpy as np
 import sys
-#Function to generate random points
-
-
-#Plot the results with matplotlib
 from matplotlib import pyplot as plt
+import argparse
+
+
+#Parse command line arguments
+def positive_float(value):
+    try:
+        f = float(value)
+    except ValueError:
+        raise argparse.ArgumentTypeError(f"{value} is not a valid float")
+    if f <= 0:
+        raise argparse.ArgumentTypeError(f"{value} must be positive")
+    return f
+
+def positive_int(value):
+    try:
+        i = int(value)
+    except ValueError:
+        raise argparse.ArgumentTypeError(f"{value} is not a valid int")
+    if i <= 0:
+        raise argparse.ArgumentTypeError(f"{value} must be positive")
+    return i
+
+parser = argparse.ArgumentParser(description="Monte Carlo visualisation of finding Pi")
+parser.add_argument("--pause", type=positive_float, default=0.001,
+                    help="Pause time between points in seconds (default: 0.001)")
+parser.add_argument("--num_points", type=positive_int, default=10000,
+                    help="Number of points to add (default: 10000)")
+
+args = parser.parse_args()
+#Number of points going to generate
+pause_time = args.pause
+n = args.num_points
+
+#Close the window when exited for loop
 def on_close(event):
     global window_closed
     window_closed = True
@@ -14,7 +44,7 @@ def on_close(event):
 #Check if window closed
 window_closed = False
 
-#Then compare to the actual value
+#Compare to the actual value of Pi to find error
 PI = np.pi
 
 #Circle features
@@ -30,8 +60,7 @@ n_circle = 0
 #Number of points in the square
 n_square = 0
 
-#Number of points going to generate
-n = 10000
+
 
 
 #Define the axis and figure
@@ -112,7 +141,7 @@ for x, y in zip(ls_x, ls_y):
     
     #Update the plot
     plt.draw()
-    plt.pause(0.001) # short delay for visual updates
+    plt.pause(pause_time) # short delay for visual updates
         
 
 plt.ioff()

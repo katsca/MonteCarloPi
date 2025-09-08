@@ -5,6 +5,8 @@ import argparse
 
 
 #Parse command line arguments
+
+#Check for pause time to be a positive float
 def positive_float(value):
     try:
         f = float(value)
@@ -14,6 +16,7 @@ def positive_float(value):
         raise argparse.ArgumentTypeError(f"{value} must be positive")
     return f
 
+#Check for number of points to be plotted to be a positive int
 def positive_int(value):
     try:
         i = int(value)
@@ -23,6 +26,7 @@ def positive_int(value):
         raise argparse.ArgumentTypeError(f"{value} must be positive")
     return i
 
+#Set the arguments
 parser = argparse.ArgumentParser(description="Monte Carlo visualisation of finding Pi")
 parser.add_argument("--pause", type=positive_float, default=0.001,
                     help="Pause time between points in seconds (default: 0.001)")
@@ -30,6 +34,7 @@ parser.add_argument("--num_points", type=positive_int, default=10000,
                     help="Number of points to add (default: 10000)")
 
 args = parser.parse_args()
+
 #Number of points going to generate
 pause_time = args.pause
 n = args.num_points

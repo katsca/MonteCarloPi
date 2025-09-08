@@ -8,12 +8,12 @@ This project demonstrates data visualization using **Matplotlib** in Python.
    ```bash
    git clone https://github.com/your-username/my-matplotlib-project.git
    cd my-matplotlib-project
-
+   
 2. Create a virtual Environment 
-
-python -m venv venv
-source venv/bin/activate  for Linux/macOS
-venv\Scripts\activate     for Windows
+```bash
+   python -m venv venv
+   source venv/bin/activate  for Linux/macOS
+   venv\Scripts\activate     for Windows
 
 3. Install Dependencies
 

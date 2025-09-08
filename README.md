@@ -23,4 +23,12 @@ This project gives visualization of finding $\pi$ using Monte Carlo method. It m
 
 Run the main Script
    ```bash
-   python main.py
+   python main.py --pause 0.01 --num_points 100
+   ```
+--pause:
+   The number of seconds you have to wait between each newly randomly generated point being plotted on the graph
+   Default: 0.001
+
+--num_points:
+   The number of randomly generated points we will create
+   Default: 10000

@@ -32,3 +32,8 @@ Run the main Script
 --num_points:
    The number of randomly generated points we will create
    Default: 10000
+
+## Example Image
+
+An example image of how the programme looks while running
+![alt text](https://github.com/katsca/MonteCarloPi/blob/main/ExampleImage.png?raw=true)

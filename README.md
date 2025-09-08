@@ -11,9 +11,9 @@ This project gives visualization of finding $\pi$ using Monte Carlo method. It m
    
 2. Create a virtual Environment 
    ```bash
-      python -m venv venv
-      source venv/bin/activate  # Linux/macOS
-      venv\Scripts\activate     # Windows
+   python -m venv venv
+   source venv/bin/activate  # Linux/macOS
+   venv\Scripts\activate     # Windows
 
 3. Install Dependencies
    ```bash

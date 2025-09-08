@@ -12,9 +12,9 @@ This project demonstrates data visualization using **Matplotlib** in Python.
 2. Create a virtual Environment 
 ```bash
    python -m venv venv
-   source venv/bin/activate  for Linux/macOS
-   venv\Scripts\activate     for Windows
-
+   source venv/bin/activate  # Linux/macOS
+   venv\Scripts\activate     # Windows
+'''
 3. Install Dependencies
 
 pip install -r requirements.txt

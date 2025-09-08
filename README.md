@@ -10,16 +10,17 @@ This project gives visualization of finding $\pi$ using Monte Carlo method. It m
    cd my-matplotlib-project
    
 2. Create a virtual Environment 
-```bash
-   python -m venv venv
-   source venv/bin/activate  # Linux/macOS
-   venv\Scripts\activate     # Windows
-'''
+   ```bash
+      python -m venv venv
+      source venv/bin/activate  # Linux/macOS
+      venv\Scripts\activate     # Windows
+
 3. Install Dependencies
-
-pip install -r requirements.txt
-
-
+   ```bash
+   pip install -r requirements.txt
+   
 ## Usage
+
 Run the main Script
-python main.py
+   ```bash
+   python main.py

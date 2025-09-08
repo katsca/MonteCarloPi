@@ -1,6 +1,6 @@
 # My Matplotlib Project
 
-This project gives visualization of finding Pi using Monte Carlo method. It makes use of **Matplotlib** and **Numpy** in Python.
+This project gives visualization of finding $\pi$ using Monte Carlo method. It makes use of **Matplotlib** and **Numpy** in Python.
 
 ## Setup
 

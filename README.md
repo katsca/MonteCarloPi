@@ -6,7 +6,7 @@ This project gives visualization of finding $\pi$ using Monte Carlo method. It m
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/my-matplotlib-project.git
+   git clone https://github.com/katsca/MonteCarloPi.git
    cd my-matplotlib-project
    
 2. Create a virtual Environment 
